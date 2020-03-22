@@ -1,0 +1,27 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Masked Plain Text plugin for Craft CMS
+ *
+ * MaskedPlainText Field Settings
+ *
+ * @author    Venveo
+ * @copyright Copyright (c) 2020 Venveo
+ * @link      https://www.venveo.com
+ * @package   MaskedPlainText
+ * @since     1.0.0
+ */
+#}
+{% import "_includes/forms" as forms %}
+<div id="container"></div>
+
+{{ forms.textField({
+    label: "Mask"|t('app'),
+    instructions: "The mask to apply to this field"|t('app'),
+    id: 'mask',
+    name: 'mask',
+    value: field.mask,
+    errors: field.getErrors('mask')
+}) }}
+
+{% include '_components/fieldtypes/PlainText/settings' %}

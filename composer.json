@@ -1,0 +1,41 @@
+{
+    "name": "venveo/craft-masked-plain-text",
+    "description": "Adds input masks to plain text fields",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "mask",
+        "plain text",
+        "field",
+        "craft-plugin",
+        "masked plain text"
+    ],
+    "support": {
+        "docs": "https://github.com/venveo/craft-masked-plain-text/blob/master/README.md",
+        "issues": "https://github.com/venveo/craft-masked-plain-text/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Venveo",
+            "homepage": "https://www.venveo.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "venveo\\maskedplaintext\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Masked Plain Text",
+        "handle": "masked-plain-text",
+        "changelogUrl": "https://raw.githubusercontent.com/venveo/craft-masked-plain-text/master/CHANGELOG.md",
+        "class": "venveo\\maskedplaintext\\Plugin"
+    }
+}
